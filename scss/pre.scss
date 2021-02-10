@@ -1,0 +1,42 @@
+// This file is part of Moodle - http://moodle.org/
+//
+// Moodle is free software: you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+//
+// Moodle is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License
+// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+
+/**
+ * Snap variables.
+ *
+ * @package   theme_hskit
+ * @copyright Copyright (c) 2021 Paul D.R. Tuck
+ * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
+
+// Snap specific overrides to Boost settings from
+// theme/boost/scss/bootstrap/variables.scss
+
+$font-size-root: 18px;
+$font-size-lg: 1.25rem;
+$font-size-sm: 0.75rem;
+$font-size-xs: 0.6rem;
+
+$brand-primary: #005da2 !default;
+$brand-success: #07a23b;
+$brand-warning: #b55600;
+$brand-danger: #990f3d;
+$brand-info: #800080;
+
+$font-family-system: -apple-system, BlinkMacSystemFont, "Segoe UI", "Open Sans",
+  "Noto Sans SC", "Helvetica Neue", Arial, sans-serif !default;
+$font-family-sans-serif: "Open Sans", "Noto Sans SC", $font-family-system;
+$font-family-feature: "Open Sans", "Noto Sans SC", $font-family-system;
+$font-family-monospace: Monaco, Menlo, Consolas, "Courier New", monospace;

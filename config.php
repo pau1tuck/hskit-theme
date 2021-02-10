@@ -28,9 +28,8 @@
 defined('MOODLE_INTERNAL') || die();
  
 // $THEME is defined before this page is included and we can define settings by adding properties to this global object.            
- 
-// The first setting we need is the name of the theme. This should be the last part of the component name, and the same             
-// as the directory name for our theme.                                                                                             
+
+$THEME->doctype = 'html5';
 $THEME->name = 'hskit';                                                                                                             
 
 $THEME->hidefromselector = false; 
@@ -71,4 +70,6 @@ $THEME->requiredblocks = '';
 // it forces a block region into the page when editing is enabled and it takes up too much room.
 $THEME->addblockposition = BLOCK_ADDBLOCK_POSITION_FLATNAV;
 
-$THEME->scss = 'main';
+$THEME->scss = function($theme) {
+    return theme_snap_get_main_scss_content($theme);
+};
