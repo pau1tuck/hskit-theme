@@ -21,6 +21,18 @@
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
+@font-face {
+  font-family: "Open Sans";
+  src: url([[font:theme|OpenSans-Regular.eot]]);
+  src: url([[font:theme|OpenSans-Regular.eot]]) format("embedded-opentype"),
+    url([[font:theme|OpenSans-Regular.woff]]) format("woff"),
+    url([[font:theme|OpenSans-Regular.woff2]]) format("woff2"),
+    url([[font:theme|OpenSans-Regular.ttf]]) format("truetype"),
+    url([[font:theme|OpenSans-Regular.svg]]) format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+
 // Snap specific overrides to Boost settings from
 // theme/boost/scss/bootstrap/variables.scss
 
