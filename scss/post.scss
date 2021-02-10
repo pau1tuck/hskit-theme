@@ -1,9 +1,20 @@
-@import "partials/colors";
-@import "partials/typography";
-
-$headings-color: $brand-primary;
-
 $footer-color-bg: #f1f0ee;
 
 $btn-primary-color: $brand-primary;
 $btn-secondary-color: $brand-secondary;
+
+.navbar .btn-drawer {
+  border: none;
+  color: $white;
+  &:hover {
+    color: $white;
+  }
+  .fa-bars {
+    font-size: 1.5rem;
+  }
+}
+
+.usertext {
+  padding-right: 10px;
+  color: #ffffff !important;
+}

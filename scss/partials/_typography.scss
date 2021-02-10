@@ -1,3 +1,51 @@
+@font-face {
+  font-family: "Open Sans";
+  src: url([[font:theme|OpenSans-Regular.eot]]);
+  src: url([[font:theme|OpenSans-Regular.eot]]) format("embedded-opentype"),
+    url([[font:theme|OpenSans-Regular.woff]]) format("woff"),
+    url([[font:theme|OpenSans-Regular.woff2]]) format("woff2"),
+    url([[font:theme|OpenSans-Regular.ttf]]) format("truetype"),
+    url([[font:theme|OpenSans-Regular.svg]]) format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url([[font:theme|OpenSans-SemiBold.eot]]);
+  src: url([[font:theme|OpenSans-SemiBold.eot]]) format("embedded-opentype"),
+    url([[font:theme|OpenSans-SemiBold.woff]]) format("woff"),
+    url([[font:theme|OpenSans-SemiBold.woff2]]) format("woff2"),
+    url([[font:theme|OpenSans-SemiBold.ttf]]) format("truetype"),
+    url([[font:theme|OpenSans-SemiBold.svg]]) format("svg");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Noto Sans SC";
+  src: url([[font:theme|NotoSansSC-Regular.eot]]);
+  src: url([[font:theme|NotoSansSC-Regular.eot]]) format("embedded-opentype"),
+    url([[font:theme|NotoSansSC-Regular.woff]]) format("woff"),
+    url([[font:theme|NotoSansSC-Regular.woff2]]) format("woff2"),
+    url([[font:theme|NotoSansSC-Regular.ttf]]) format("truetype"),
+    url([[font:theme|NotoSansSC-Regular.svg]]) format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Noto Sans SC";
+  src: url([[font:theme|NotoSansSC-Medium.eot]]);
+  src: url([[font:theme|NotoSansSC-Medium.eot]]) format("embedded-opentype"),
+    url([[font:theme|NotoSansSC-Medium.woff]]) format("woff"),
+    url([[font:theme|NotoSansSC-Medium.woff2]]) format("woff2"),
+    url([[font:theme|NotoSansSC-Medium.ttf]]) format("truetype"),
+    url([[font:theme|NotoSansSC-Medium.svg]]) format("svg");
+  font-weight: 500;
+  font-style: normal;
+}
+
 $font-family-system: -apple-system, BlinkMacSystemFont, "Segoe UI", "Open Sans",
   "Noto Sans SC", "Helvetica Neue", Arial, sans-serif !default;
 $font-family-sans-serif: "Open Sans", "Noto Sans SC", $font-family-system;
@@ -8,5 +56,3 @@ $font-size-root: 18px;
 $font-size-lg: 1.25rem;
 $font-size-sm: 0.75rem;
 $font-size-xs: 0.6rem;
-
-$headings-font-weight: 600;
