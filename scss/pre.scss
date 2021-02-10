@@ -14,7 +14,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Snap variables.
+ * HSKIT variables.
  *
  * @package   theme_hskit
  * @copyright Copyright (c) 2021 Paul D.R. Tuck
@@ -33,22 +33,38 @@
   font-style: normal;
 }
 
-// Snap specific overrides to Boost settings from
-// theme/boost/scss/bootstrap/variables.scss
+@font-face {
+  font-family: "Open Sans";
+  src: url([[font:theme|OpenSans-SemiBold.eot]]);
+  src: url([[font:theme|OpenSans-SemiBold.eot]]) format("embedded-opentype"),
+    url([[font:theme|OpenSans-SemiBold.woff]]) format("woff"),
+    url([[font:theme|OpenSans-SemiBold.woff2]]) format("woff2"),
+    url([[font:theme|OpenSans-SemiBold.ttf]]) format("truetype"),
+    url([[font:theme|OpenSans-SemiBold.svg]]) format("svg");
+  font-weight: 600;
+  font-style: normal;
+}
 
-$font-size-root: 18px;
-$font-size-lg: 1.25rem;
-$font-size-sm: 0.75rem;
-$font-size-xs: 0.6rem;
+@font-face {
+  font-family: "Noto Sans SC";
+  src: url([[font:theme|NotoSansSC-Regular.eot]]);
+  src: url([[font:theme|NotoSansSC-Regular.eot]]) format("embedded-opentype"),
+    url([[font:theme|NotoSansSC-Regular.woff]]) format("woff"),
+    url([[font:theme|NotoSansSC-Regular.woff2]]) format("woff2"),
+    url([[font:theme|NotoSansSC-Regular.ttf]]) format("truetype"),
+    url([[font:theme|NotoSansSC-Regular.svg]]) format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
 
-$brand-primary: #005da2 !default;
-$brand-success: #07a23b;
-$brand-warning: #b55600;
-$brand-danger: #990f3d;
-$brand-info: #800080;
-
-$font-family-system: -apple-system, BlinkMacSystemFont, "Segoe UI", "Open Sans",
-  "Noto Sans SC", "Helvetica Neue", Arial, sans-serif !default;
-$font-family-sans-serif: "Open Sans", "Noto Sans SC", $font-family-system;
-$font-family-feature: "Open Sans", "Noto Sans SC", $font-family-system;
-$font-family-monospace: Monaco, Menlo, Consolas, "Courier New", monospace;
+@font-face {
+  font-family: "Noto Sans SC";
+  src: url([[font:theme|NotoSansSC-Medium.eot]]);
+  src: url([[font:theme|NotoSansSC-Medium.eot]]) format("embedded-opentype"),
+    url([[font:theme|NotoSansSC-Medium.woff]]) format("woff"),
+    url([[font:theme|NotoSansSC-Medium.woff2]]) format("woff2"),
+    url([[font:theme|NotoSansSC-Medium.ttf]]) format("truetype"),
+    url([[font:theme|NotoSansSC-Medium.svg]]) format("svg");
+  font-weight: 500;
+  font-style: normal;
+}

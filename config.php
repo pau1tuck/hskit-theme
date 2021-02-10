@@ -70,6 +70,8 @@ $THEME->requiredblocks = '';
 // it forces a block region into the page when editing is enabled and it takes up too much room.
 $THEME->addblockposition = BLOCK_ADDBLOCK_POSITION_FLATNAV;
 
-$THEME->scss = function($theme) {
-    return theme_snap_get_main_scss_content($theme);
+$THEME->scss = function($theme) {                                                                                               
+    return theme_hskit_get_main_scss_content($theme);                                                                               
 };
+
+$THEME->layouts = [];
