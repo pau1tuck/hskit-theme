@@ -1,20 +1,36 @@
-$footer-color-bg: #f1f0ee;
+@import "partials/buttons";
 
-$btn-primary-color: $brand-primary;
-$btn-secondary-color: $brand-secondary;
+// Navbar
 
-.navbar .btn-drawer {
-  border: none;
-  color: $white;
-  &:hover {
+.navbar {
+  .btn-drawer {
+    border: none;
     color: $white;
+    &:hover {
+      color: $white;
+    }
+    .fa-bars {
+      padding-top: 3px;
+      font-size: 1.4rem;
+    }
   }
-  .fa-bars {
-    font-size: 1.5rem;
+  .usertext {
+    padding-right: 10px;
+    font-weight: 600;
+    color: #ffffff !important;
+  }
+  .caret {
+    display: none;
   }
 }
+// Page
 
-.usertext {
-  padding-right: 10px;
-  color: #ffffff !important;
+#page-content {
+  background-image: url([[pix:theme|background]]);
+}
+
+// Footer
+#page-footer {
+  text-align: center;
+  background-color: $darkgray;
 }
