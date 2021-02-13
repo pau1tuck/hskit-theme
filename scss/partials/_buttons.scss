@@ -1,4 +1,11 @@
 .btn {
-  border: none;
   border-radius: 5px;
+  &:active,
+  &.active,
+  &:focus,
+  &.focus {
+    border-width: 1px;
+    outline: 0;
+    box-shadow: none;
+  }
 }

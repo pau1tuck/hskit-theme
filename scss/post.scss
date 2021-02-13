@@ -14,6 +14,12 @@
       font-size: 1.4rem;
     }
   }
+  .login {
+    color: $white;
+    a {
+      color: $skyblue;
+    }
+  }
   .usertext {
     padding-right: 10px;
     font-weight: 600;
@@ -25,6 +31,43 @@
 }
 // Page
 
+#nav-drawer .list-group-item {
+  outline: 0;
+  box-shadow: none;
+}
+
+#page-header .card {
+  min-height: 140px;
+  background-image: url([[pix:theme|banner-1]]);
+  background-repeat: no-repeat;
+  background-size: cover;
+  h1 {
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    font-family: $headings-font-family;
+    font-size: 1.7rem;
+    font-weight: $headings-font-weight;
+    color: $white !important;
+  }
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  li a {
+    font-family: $headings-font-family;
+    font-weight: $headings-font-weight;
+    color: $white !important;
+  }
+}
+
+#page-navbar li {
+  font-family: $headings-font-family;
+  font-weight: $headings-font-weight;
+  color: $skyblue !important;
+}
+
 #page-content {
   background-image: url([[pix:theme|background]]);
 }
@@ -32,5 +75,14 @@
 // Footer
 #page-footer {
   text-align: center;
+  font-family: $headings-font-family;
   background-color: $darkgray;
+}
+
+.card {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  &:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25), 0 3px 3px rgba(0, 0, 0, 0.22);
+  }
 }

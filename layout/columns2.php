@@ -42,6 +42,8 @@ $hasblocks = strpos($blockshtml, 'data-block=') !== false;
 $buildregionmainsettings = !$PAGE->include_region_main_settings_in_header_actions();
 // If the settings menu will be included in the header then don't add it here.
 $regionmainsettingsmenu = $buildregionmainsettings ? $OUTPUT->region_main_settings_menu() : false;
+$footertext = "© " . date("Y") . " HSKIT LTD. (ROI)";
+
 $templatecontext = [
     'sitename' => format_string($SITE->shortname, true, ['context' => context_course::instance(SITEID), "escape" => false]),
     'output' => $OUTPUT,
@@ -51,8 +53,10 @@ $templatecontext = [
     'navdraweropen' => $navdraweropen,
     'regionmainsettingsmenu' => $regionmainsettingsmenu,
     'hasregionmainsettingsmenu' => !empty($regionmainsettingsmenu),
-    'hskit-logo-sm' => $OUTPUT->image_url('hskit-logo-sm', 'theme'),
+    'footertext' => $footertext,
     'background' => $OUTPUT->image_url('background', 'theme'),
+    'hskit-logo-sm' => $OUTPUT->image_url('hskit-logo-sm', 'theme'),
+    'banner-1' => $OUTPUT->image_url('banner-1', 'theme'),
 ];
 
 $nav = $PAGE->flatnav;
