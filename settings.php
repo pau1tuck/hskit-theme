@@ -50,19 +50,17 @@ if ($ADMIN->fulltree) {
 
     // Preset files setting.
     $name = 'theme_hskit/presetfiles';
-    $title = get_string('presetfiles','theme_hskit');
+    $title = get_string('presetfiles', 'theme_hskit');
     $description = get_string('presetfiles_desc', 'theme_hskit');
 
-    $setting = new admin_setting_configstoredfile($name, $title, $description, 'preset', 0,
-        array('maxfiles' => 20, 'accepted_types' => array('.scss')));
-    $page->add($setting);
-
-    // Background image setting.
-    $name = 'theme_hskit/backgroundimage';
-    $title = get_string('backgroundimage', 'theme_hskit');
-    $description = get_string('backgroundimage_desc', 'theme_hskit');
-    $setting = new admin_setting_configstoredfile($name, $title, $description, 'backgroundimage');
-    $setting->set_updatedcallback('theme_reset_all_caches');
+    $setting = new admin_setting_configstoredfile(
+        $name,
+        $title,
+        $description,
+        'preset',
+        0,
+        array('maxfiles' => 20, 'accepted_types' => array('.scss'))
+    );
     $page->add($setting);
 
     // Variable $body-color.
@@ -81,28 +79,26 @@ if ($ADMIN->fulltree) {
     $page = new admin_settingpage('theme_hskit_advanced', get_string('advancedsettings', 'theme_hskit'));
 
     // Raw SCSS to include before the content.
-    $setting = new admin_setting_scsscode('theme_hskit/scsspre',
-        get_string('rawscsspre', 'theme_hskit'), get_string('rawscsspre_desc', 'theme_hskit'), '', PARAM_RAW);
+    $setting = new admin_setting_scsscode(
+        'theme_hskit/scsspre',
+        get_string('rawscsspre', 'theme_hskit'),
+        get_string('rawscsspre_desc', 'theme_hskit'),
+        '',
+        PARAM_RAW
+    );
     $setting->set_updatedcallback('theme_reset_all_caches');
     $page->add($setting);
 
     // Raw SCSS to include after the content.
-    $setting = new admin_setting_scsscode('theme_hskit/scss', get_string('rawscss', 'theme_hskit'),
-        get_string('rawscss_desc', 'theme_hskit'), '', PARAM_RAW);
+    $setting = new admin_setting_scsscode(
+        'theme_hskit/scss',
+        get_string('rawscss', 'theme_hskit'),
+        get_string('rawscss_desc', 'theme_hskit'),
+        '',
+        PARAM_RAW
+    );
     $setting->set_updatedcallback('theme_reset_all_caches');
     $page->add($setting);
 
     $settings->add($page);
-
-// Login page background setting.                                                                                               
-    // We use variables for readability.                                                                                            
-    $name = 'theme_hskit/loginbackgroundimage';                                                                                     
-    $title = get_string('loginbackgroundimage', 'theme_hskit');                                                                     
-    $description = get_string('loginbackgroundimage_desc', 'theme_hskit');                                                          
-    // This creates the new setting.                                                                                                
-    $setting = new admin_setting_configstoredfile($name, $title, $description, 'loginbackgroundimage');                             
-    // This function will copy the image into the data_root location it can be served from.                                         
-    $setting->set_updatedcallback('theme_hskit_update_settings_images');                                                            
-    // We always have to add the setting to a page for it to have any effect.                                                       
-    $page->add($setting);
 }
