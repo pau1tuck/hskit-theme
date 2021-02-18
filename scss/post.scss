@@ -22,6 +22,9 @@
       font-size: 1.4rem;
     }
   }
+  #logo {
+    margin-left: -10px;
+  }
   .login {
     color: $white;
     a {
@@ -29,23 +32,27 @@
     }
   }
   .usertext {
+    font-family: $headings-font-family;
     padding-right: 10px;
-    font-weight: 600;
+    font-weight: 700;
     color: #ffffff !important;
   }
   .caret {
     display: none;
   }
 }
-// Page
-
+.dropdown-menu a .icon {
+  color: lightgray !important;
+}
 #nav-drawer .list-group-item {
   outline: 0;
   box-shadow: none;
 }
 
+// Page Header
 #page-header .card {
   min-height: 140px;
+  padding-left: 1.7rem;
   background-image: url([[pix:theme|banner-1]]);
   background-repeat: no-repeat;
   background-size: cover;
@@ -55,8 +62,10 @@
   &:hover {
     box-shadow: none;
   }
+  .page-context-header {
+    padding: 0px;
+  }
   h1 {
-    padding: 10px;
     background-color: rgba(0, 0, 0, 0.4);
     border-radius: 5px;
     font-family: $headings-font-family;
@@ -74,6 +83,23 @@
     font-weight: $headings-font-weight;
     color: $white !important;
   }
+  .breadcrumb:not(:empty) {
+    padding-left: 2px;
+  }
+  .dropdown-toggle {
+    color: $white !important;
+  }
+}
+
+@media (max-width: 768px) {
+  #page-header {
+    .card .card-body {
+      padding-top: 1.5rem;
+    }
+    .breadcrumb:not(:empty) {
+      border: none;
+    }
+  }
 }
 
 #page-navbar li {
@@ -86,7 +112,7 @@
   background-image: url([[pix:theme|background]]);
 }
 
-// Footer
+// Page Footer
 #page-footer {
   text-align: center;
   font-family: $headings-font-family;
