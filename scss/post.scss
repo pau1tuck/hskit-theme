@@ -118,9 +118,27 @@
   background-image: url([[pix:theme|background]]);
 }
 
+// Upper padding
+#region-main {
+  padding-top: 10px;
+}
+.course-content #above-tiles {
+  min-height: 0 !important;
+  max-height: 5px !important;
+}
+
 // Page Footer
 #page-footer {
   text-align: center;
   font-family: $headings-font-family;
   background-color: $darkgray;
+}
+
+// Site home
+.coursebox .courseimage img {
+  max-width: 100% !important;
+  max-height: 200px !important;
+}
+#multi_section_tiles h3 {
+  color: $white !important;
 }
