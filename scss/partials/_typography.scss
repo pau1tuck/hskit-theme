@@ -1,23 +1,35 @@
 @font-face {
-  font-family: "PT Sans";
-  src: url([[font:theme|PTSans-Regular.eot]]);
-  src: url([[font:theme|PTSans-Regular.eot]]) format("embedded-opentype"),
-    url([[font:theme|PTSans-Regular.woff]]) format("woff"),
-    url([[font:theme|PTSans-Regular.woff2]]) format("woff2"),
-    url([[font:theme|PTSans-Regular.ttf]]) format("truetype"),
-    url([[font:theme|PTSans-Regular.svg]]) format("svg");
+  font-family: "Ubuntu";
+  src: url([[font:theme|Ubuntu-Regular.eot]]);
+  src: url([[font:theme|Ubuntu-Regular.eot]]) format("embedded-opentype"),
+    url([[font:theme|Ubuntu-Regular.woff]]) format("woff"),
+    url([[font:theme|Ubuntu-Regular.woff2]]) format("woff2"),
+    url([[font:theme|Ubuntu-Regular.ttf]]) format("truetype"),
+    url([[font:theme|Ubuntu-Regular.svg]]) format("svg");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "PT Sans";
-  src: url([[font:theme|PTSans-Bold.eot]]);
-  src: url([[font:theme|PTSans-Bold.eot]]) format("embedded-opentype"),
-    url([[font:theme|PTSans-Bold.woff]]) format("woff"),
-    url([[font:theme|PTSans-Bold.woff2]]) format("woff2"),
-    url([[font:theme|PTSans-Bold.ttf]]) format("truetype"),
-    url([[font:theme|PTSans-Bold.svg]]) format("svg");
+  font-family: "Ubuntu";
+  src: url([[font:theme|Ubuntu-SemiBold.eot]]);
+  src: url([[font:theme|Ubuntu-SemiBold.eot]]) format("embedded-opentype"),
+    url([[font:theme|Ubuntu-SemiBold.woff]]) format("woff"),
+    url([[font:theme|Ubuntu-SemiBold.woff2]]) format("woff2"),
+    url([[font:theme|Ubuntu-SemiBold.ttf]]) format("truetype"),
+    url([[font:theme|Ubuntu-SemiBold.svg]]) format("svg");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Ubuntu";
+  src: url([[font:theme|Ubuntu-Bold.eot]]);
+  src: url([[font:theme|Ubuntu-Bold.eot]]) format("embedded-opentype"),
+    url([[font:theme|Ubuntu-Bold.woff]]) format("woff"),
+    url([[font:theme|Ubuntu-Bold.woff2]]) format("woff2"),
+    url([[font:theme|Ubuntu-Bold.ttf]]) format("truetype"),
+    url([[font:theme|Ubuntu-Bold.svg]]) format("svg");
   font-weight: 700;
   font-style: normal;
 }
@@ -58,16 +70,28 @@
   font-style: normal;
 }
 
-$font-family-system: -apple-system, BlinkMacSystemFont, "PT Sans",
-  "Noto Sans SC", "Quicksand", "Montserrat", "Helvetica Neue", Arial, sans-serif !default;
-$font-family-sans-serif: "PT Sans", "Noto Sans SC", sans-serif,
+@font-face {
+  font-family: "Noto Sans SC";
+  src: url([[font:theme|NotoSansSC-Bold.eot]]);
+  src: url([[font:theme|NotoSansSC-Bold.eot]]) format("embedded-opentype"),
+    url([[font:theme|NotoSansSC-Bold.woff]]) format("woff"),
+    url([[font:theme|NotoSansSC-Bold.woff2]]) format("woff2"),
+    url([[font:theme|NotoSansSC-Bold.ttf]]) format("truetype"),
+    url([[font:theme|NotoSansSC-Bold.svg]]) format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
+
+$font-family-system: -apple-system, BlinkMacSystemFont, "Ubuntu", "Noto Sans SC",
+  "Quicksand", "Montserrat", "Helvetica Neue", Arial, sans-serif !default;
+$font-family-sans-serif: "Ubuntu", "Noto Sans SC", sans-serif,
   $font-family-system;
-$font-family-feature: "PT Sans", "Noto Sans SC", $font-family-system;
+$font-family-feature: "Ubuntu", "Noto Sans SC", $font-family-system;
 $font-family-monospace: Monaco, Menlo, Consolas, "Courier New", monospace;
-$headings-font-family: "Quicksand", "Noto Sans SC", "Helvetica Neue", Arial,
+$headings-font-family: "Quicksand", "Ubuntu", "Helvetica Neue", Arial,
   sans-serif;
 
-$font-size-root: 18px;
+$font-size-root: 17px;
 $font-size-base: 16px;
 $font-size-lg: 1.25rem;
 $font-size-sm: 0.75rem;
