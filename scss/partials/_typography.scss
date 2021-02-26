@@ -82,9 +82,22 @@
   font-style: normal;
 }
 
-$font-family-system: -apple-system, BlinkMacSystemFont, "Ubuntu", "Noto Sans SC",
-  "Quicksand", "Montserrat", "Helvetica Neue", Arial, sans-serif !default;
-$font-family-sans-serif: "Ubuntu", "Noto Sans SC", sans-serif,
+@font-face {
+  font-family: "Ma Shan Zheng";
+  src: url([[font:theme|MaShanZheng-Regular.eot]]);
+  src: url([[font:theme|MaShanZheng-Regular.eot]]) format("embedded-opentype"),
+    url([[font:theme|MaShanZheng-Regular.woff]]) format("woff"),
+    url([[font:theme|MaShanZheng-Regular.woff2]]) format("woff2"),
+    url([[font:theme|MaShanZheng-Regular.ttf]]) format("truetype"),
+    url([[font:theme|MaShanZheng-Regular.svg]]) format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+
+$font-family-system: -apple-system, BlinkMacSystemFont, "Ubuntu",
+  "Ma Shan Zheng", "Noto Sans SC", "Quicksand", "Montserrat", "Helvetica Neue",
+  Arial, sans-serif !default;
+$font-family-sans-serif: "Ubuntu", "Noto Sans SC", "Ma Shan Zheng", sans-serif,
   $font-family-system;
 $font-family-feature: "Ubuntu", "Noto Sans SC", $font-family-system;
 $font-family-monospace: Monaco, Menlo, Consolas, "Courier New", monospace;
